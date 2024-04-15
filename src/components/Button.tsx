@@ -3,7 +3,7 @@ interface props {
 }
 const Button = ({children}: props) => {
   return (
-    <button className="btn btn-outline-danger my-2">{children}</button>
+    <button className="btn btn-outline-danger my-2 ">{children}</button>
   )
 }
 

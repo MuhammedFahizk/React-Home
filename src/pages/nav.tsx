@@ -5,15 +5,18 @@ const items = [
   'Foods',
   'About'
 ]
-function navBar () {
+interface Props{
+  section: number;
+}
+function NavBar ({section}: Props) {
   return (
-    <div className="container pt-5 d-flex navbar navbar-expand-lg">
+    <div className="container pt-5 d-flex navbar bg-dark rounded px-4 fixed-top navbar-expand-lg">
       <h4 className="text-danger">FOOD<span className="text-success">ME</span></h4>
-      <NavBarItems items={items} />
+      <NavBarItems section={section} items={items} />
    
 
     </div>
   )
 }
 
-export default navBar
+export default NavBar

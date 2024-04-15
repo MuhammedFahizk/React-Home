@@ -1,0 +1,9 @@
+#navbar {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style to show the navigation bar when scrolled down */
+.navbar-show {
+  transform: translateY(0%);
+}
