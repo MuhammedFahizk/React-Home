@@ -1,13 +1,10 @@
-interface Props {
-    children: string,
-    onclick: () => void
+interface props {
+    children: string
 }
-const Buttons = ({children, onclick} : Props) => {
-   
+const Button = ({children}: props) => {
   return (
-    <button className="btn btn-primary m-4" onClick={onclick}>{children}</button>
+    <button className="btn btn-outline-danger my-2">{children}</button>
   )
 }
 
-
-export default Buttons
+export default Button
